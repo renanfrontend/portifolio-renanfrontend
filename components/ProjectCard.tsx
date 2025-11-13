@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ repo }) => {
   };
 
   return (
-    <div className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg border border-slate-700 flex flex-col h-full transition-all duration-300 hover:border-cyan-400 hover:shadow-2xl hover:shadow-cyan-500/10">
+    <div className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg border border-slate-700 flex flex-col h-full transition-all duration-300 hover:border-cyan-400 hover:shadow-2xl hover:shadow-cyan-400/20 hover:scale-105">
       <div className="flex-grow">
         <header className="flex justify-between items-start mb-4">
           <h3 className="text-xl font-bold text-white">{repo.name}</h3>
