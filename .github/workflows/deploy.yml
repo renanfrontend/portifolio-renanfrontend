@@ -1,4 +1,3 @@
-
 # Workflow para fazer o build e deploy do site no GitHub Pages
 name: Deploy Portfolio to GitHub Pages
 
@@ -31,28 +30,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       
-      # Nota: Em um projeto real com Vite/CRA, você teria passos para instalar dependências
-      # e fazer o build da aplicação aqui. Como o ambiente atual não possui
-      # um sistema de build, estamos simulando o processo e publicando os arquivos estáticos.
-      # Exemplo de passos para um projeto com `npm`:
-      # - name: Setup Node.js
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: '20'
-      #     cache: 'npm'
-      # - name: Install dependencies
-      #   run: npm install
-      # - name: Build project
-      #   run: npm run build # Este comando criaria a pasta 'dist' ou 'build'
-
+      # Nota: Este ambiente de desenvolvimento não possui um passo de 'build' tradicional (npm run build).
+      # Por isso, publicamos o diretório raiz diretamente. Em um projeto com Vite ou Create React App,
+      # haveria passos para instalar dependências e gerar uma pasta de build (ex: 'dist').
+      
       - name: Setup Pages
         uses: actions/configure-pages@v5
       
-      # Simula a criação de um artefato de build publicando o diretório raiz
-      # Em um projeto real, o path seria a pasta de build (ex: './dist')
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # Publica o conteúdo do diretório raiz como o artefato do site.
           path: '.'
 
       - name: Deploy to GitHub Pages
