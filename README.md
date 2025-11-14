@@ -1,9 +1,8 @@
-
 # Portfólio de Renan Augusto Santos | Desenvolvedor Frontend
 
 Este é o repositório do meu portfólio pessoal, um projeto desenvolvido para apresentar minhas habilidades, projetos e experiência como desenvolvedor frontend. Inspirado em designs modernos e sofisticados, este site foi construído com as mais recentes tecnologias do ecossistema React.
 
-**[Acesse a versão publicada aqui](https://renanfrontend.github.io/portfolio/)** _(Substitua "portfolio" pelo nome do seu repositório se for diferente)_
+**[Acesse a versão publicada aqui](https://renanfrontend.github.io/portfolio-renanfrontend/)**
 
 ## ✨ Visão Geral
 
@@ -33,8 +32,8 @@ Para clonar e rodar este projeto em sua máquina local, siga os passos abaixo. V
 
 1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/renanfrontend/portfolio.git
-    cd portfolio
+    git clone https://github.com/renanfrontend/portfolio-renanfrontend.git
+    cd portfolio-renanfrontend
     ```
 
 2.  **Instale as dependências:**
