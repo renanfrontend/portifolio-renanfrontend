@@ -34,9 +34,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build static site
-        # O argumento base é crucial para o deploy em um subdiretório do GitHub Pages
-        env:
-          VITE_BASE: /portfolio-renanfrontend/
         run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
