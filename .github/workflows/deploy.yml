@@ -49,25 +49,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-<<<<<<< HEAD
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      
-      # Nota: Este ambiente de desenvolvimento não possui um passo de 'build' tradicional (npm run build).
-      # Por isso, publicamos o diretório raiz diretamente. Em um projeto com Vite ou Create React App,
-      # haveria passos para instalar dependências e gerar uma pasta de build (ex: 'dist').
-      
+      - name: Download artifact
+        uses: actions/download-pages-artifact@v2
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Publica o conteúdo do diretório raiz como o artefato do site.
-          path: '.'
 
-=======
->>>>>>> 1b6dfbb (chore: update project configuration and dependencies)
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
