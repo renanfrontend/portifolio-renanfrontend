@@ -38,7 +38,7 @@ const Header: React.FC = () => {
         }`}
       >
         <div className="container mx-auto px-4 md:px-8 flex justify-between items-center py-4">
-          <a href="#" className="flex items-center gap-2 text-xl font-bold text-white hover:text-cyan-400 transition-colors">
+          <a href="#" className="flex items-center gap-2 text-xl font-bold text-white hover:text-cyan-400 transition-colors font-display">
             <FiCode />
             <span>Renan Augusto</span>
           </a>
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-3xl font-semibold text-slate-200 hover:text-cyan-400 transition-colors duration-300"
+              className="text-3xl font-semibold text-slate-200 hover:text-cyan-400 transition-colors duration-300 font-display"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.label}

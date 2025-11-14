@@ -1,4 +1,3 @@
-
 import React from 'react';
 import AnimatedSection from './AnimatedSection';
 import { FaQuoteLeft } from 'react-icons/fa';
@@ -33,7 +32,7 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }
     <FaQuoteLeft className="text-cyan-400 text-3xl mb-6" />
     <p className="text-slate-400 mb-6 flex-grow">"{testimonial.quote}"</p>
     <div className="flex flex-col items-center">
-        <div className="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center text-xl font-bold text-white mb-4 border-2 border-cyan-500">
+        <div className="w-16 h-16 rounded-full bg-slate-700 flex items-center justify-center text-xl font-bold text-white mb-4 border-2 border-cyan-500 font-display">
             {testimonial.avatar}
         </div>
       <p className="font-bold text-white">{testimonial.name}</p>
@@ -46,7 +45,7 @@ const Testimonials: React.FC = () => {
   return (
     <section id="depoimentos" className="py-20 md:py-32">
       <AnimatedSection className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6 font-display">
           O Que Dizem Sobre Mim
         </h2>
         <div className="w-24 h-1 bg-cyan-400 mx-auto mb-16"></div>

@@ -1,4 +1,3 @@
-
 import { useState, useEffect, RefObject } from 'react';
 
 export const useOnScreen = (ref: RefObject<HTMLElement>, rootMargin = '0px') => {

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import AnimatedSection from './AnimatedSection';
@@ -7,10 +6,10 @@ const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex items-center justify-center text-center">
       <AnimatedSection>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 font-display">
           Renan Augusto Santos
         </h1>
-        <p className="text-xl md:text-2xl text-cyan-400 font-semibold mb-8">
+        <p className="text-xl md:text-2xl text-cyan-400 font-semibold mb-8 font-display">
           Desenvolvedor Frontend & Especialista em UI/UX
         </p>
         <p className="max-w-3xl mx-auto text-slate-400 mb-10 text-lg">

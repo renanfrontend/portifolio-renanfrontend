@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FaReact, FaNodeJs, FaFigma, FaGitAlt } from 'react-icons/fa';
 import { SiTypescript, SiNextdotjs, SiTailwindcss, SiJavascript, SiVercel, SiDocker } from 'react-icons/si';
@@ -39,25 +38,25 @@ const Skills: React.FC = () => {
   return (
     <section id="habilidades" className="py-20 md:py-32">
       <AnimatedSection className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6 font-display">
           Habilidades Técnicas
         </h2>
         <div className="w-24 h-1 bg-cyan-400 mx-auto mb-16"></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-2xl font-semibold text-white mb-6">Frontend</h3>
+            <h3 className="text-2xl font-semibold text-white mb-6 font-display">Frontend</h3>
             <div className="space-y-4">
               {skills.frontend.map((skill) => <SkillCard key={skill.name} skill={skill} />)}
             </div>
           </div>
           <div>
-            <h3 className="text-2xl font-semibold text-white mb-6">Backend</h3>
+            <h3 className="text-2xl font-semibold text-white mb-6 font-display">Backend</h3>
             <div className="space-y-4">
               {skills.backend.map((skill) => <SkillCard key={skill.name} skill={skill} />)}
             </div>
           </div>
           <div>
-            <h3 className="text-2xl font-semibold text-white mb-6">Ferramentas & DevOps</h3>
+            <h3 className="text-2xl font-semibold text-white mb-6 font-display">Ferramentas & DevOps</h3>
             <div className="space-y-4">
               {skills.ferramentas.map((skill) => <SkillCard key={skill.name} skill={skill} />)}
             </div>

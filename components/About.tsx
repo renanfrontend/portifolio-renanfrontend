@@ -1,4 +1,3 @@
-
 import React from 'react';
 import AnimatedSection from './AnimatedSection';
 
@@ -6,7 +5,7 @@ const About: React.FC = () => {
   return (
     <section id="sobre" className="py-20 md:py-32">
       <AnimatedSection className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-display">
           Sobre Mim
         </h2>
         <div className="w-24 h-1 bg-cyan-400 mx-auto mb-10"></div>

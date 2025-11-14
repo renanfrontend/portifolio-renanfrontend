@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GithubRepo } from '../types';
 import { FiExternalLink, FiGithub, FiStar, FiGitBranch } from 'react-icons/fi';
@@ -19,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ repo }) => {
     <div className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg border border-slate-700 flex flex-col h-full transition-all duration-300 hover:border-cyan-400 hover:shadow-2xl hover:shadow-cyan-400/20 hover:scale-105">
       <div className="flex-grow">
         <header className="flex justify-between items-start mb-4">
-          <h3 className="text-xl font-bold text-white">{repo.name}</h3>
+          <h3 className="text-xl font-bold text-white font-display">{repo.name}</h3>
           <div className="flex items-center gap-3">
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-cyan-400 transition-colors">
               <FiGithub size={20} />

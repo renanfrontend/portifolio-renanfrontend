@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
@@ -15,7 +14,7 @@ const Footer: React.FC = () => {
           </a>
         </div>
         <p>&copy; {new Date().getFullYear()} Renan Augusto Santos. Todos os direitos reservados.</p>
-        <p>Construído com React, TypeScript & Tailwind CSS.</p>
+        <p className="text-sm mt-1">Construído com Vite, React, TypeScript & Tailwind CSS.</p>
       </div>
     </footer>
   );

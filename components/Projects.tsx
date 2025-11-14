@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { GithubRepo } from '../types';
 import { fetchRepos } from '../services/githubService';
@@ -26,6 +25,7 @@ const Projects: React.FC = () => {
   }, [page, isLoading, hasMore]);
   
   useEffect(() => {
+    // Carrega a primeira página de projetos ao montar o componente
     loadMoreProjects();
      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -55,7 +55,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projetos" className="py-20 md:py-32">
       <AnimatedSection className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6 font-display">
           Meus Projetos
         </h2>
         <div className="w-24 h-1 bg-cyan-400 mx-auto mb-16"></div>

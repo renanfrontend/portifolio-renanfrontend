@@ -1,4 +1,3 @@
-
 import React from 'react';
 import AnimatedSection from './AnimatedSection';
 import { Article } from '../types';
@@ -27,7 +26,7 @@ const ArticleCard: React.FC<{ article: Article }> = ({ article }) => (
       <img src={article.imageUrl} alt={article.title} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
     </div>
     <div className="p-6">
-      <h3 className="text-xl font-bold text-white mb-3">{article.title}</h3>
+      <h3 className="text-xl font-bold text-white mb-3 font-display">{article.title}</h3>
       <p className="text-slate-400 text-sm mb-4">{article.excerpt}</p>
       <a href={`#blog/${article.slug}`} className="font-semibold text-cyan-400 inline-flex items-center gap-2 group-hover:gap-3 transition-all">
         Leia mais <FiArrowRight />
@@ -41,7 +40,7 @@ const Blog: React.FC = () => {
   return (
     <section id="blog" className="py-20 md:py-32">
       <AnimatedSection className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6 font-display">
           Blog & Artigos
         </h2>
         <div className="w-24 h-1 bg-cyan-400 mx-auto mb-16"></div>
