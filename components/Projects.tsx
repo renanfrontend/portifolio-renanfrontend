@@ -16,7 +16,14 @@ const Projects: React.FC = () => {
     setIsLoading(true);
     const newRepos = await fetchRepos(page);
     if (newRepos.length > 0) {
-      setRepos(prev => [...prev, ...newRepos]);
+      setRepos(prev => {
+        const combined = [...prev, ...newRepos];
+        const map = new Map<number, typeof combined[number]>();
+        for (const r of combined) {
+          map.set(r.id, r);
+        }
+        return Array.from(map.values());
+      });
       setPage(prev => prev + 1);
     } else {
       setHasMore(false);
